@@ -15,7 +15,7 @@ public class PlayerControllerBPatches
     ///     Patch the <see cref="PlayerControllerB.SwitchItem_performed" /> method to invert the scroll direction.
     /// </summary>
     /// <param name="instructions">An <c>IEnumerable</c> of <c>CodeInstruction</c> instances.</param>
-    [HarmonyPatch("SwitchItem_performed")]
+    [HarmonyPatch("ScrollMouse_performed")]
     [HarmonyTranspiler]
     public static IEnumerable<CodeInstruction> InvertControlsSwitchItemPerformed(
         IEnumerable<CodeInstruction> instructions)
